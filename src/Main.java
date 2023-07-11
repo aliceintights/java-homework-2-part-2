@@ -2,17 +2,25 @@ public class Main {
     public static void main(String[] args) {
 
         int account = 574;
-        int amountadded = 1347;
-        int forbonus = 1000;
-        int bonus = 1;
+        int amountAdded = 980;
+        int forBonus = 1000;
 
-        int endbonus = (amountadded / 100);
-        System.out.println(amountadded / 100);
+        int endBonus = (amountAdded / 100);
 
-        if (amountadded > 1000) {
-            System.out.println(account + amountadded + endbonus);
+        {
+            if (endBonus > 10) {
+                System.out.println(endBonus);
+            } else {
+                System.out.println(0);
+            }
+        }
+
+        System.out.println();
+
+        if (amountAdded > 1000) {
+            System.out.println(account + amountAdded + endBonus);
         } else {
-            System.out.println(account + amountadded);
+            System.out.println(account + amountAdded);
         }
     }
 }
